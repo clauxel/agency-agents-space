@@ -1,0 +1,37 @@
+# Agency Agents Space
+
+Independent hosted AI specialist team planner for the open-source agency-agents roster, NEXUS workflows, and paid planning exports.
+
+Canonical site: https://agency-agents.space/
+Support: support@aigeamy.com
+Last updated: 2026-06-30
+
+## Important Boundary
+
+This site is not the official Agency Agents app and does not install agents directly. It prepares roster plans, handoff templates, evidence gates, and paid exports.
+
+## Core Pages
+
+- Homepage: https://agency-agents.space/
+- Planner preview: https://agency-agents.space/planner/
+- NEXUS sprint planner: https://agency-agents.space/nexus-sprint/
+- Codex agents planning: https://agency-agents.space/codex-agents/
+- Integrations: https://agency-agents.space/integrations/
+- Pricing: https://agency-agents.space/pricing/
+- Source notes: https://agency-agents.space/source-notes/
+- FAQ: https://agency-agents.space/faq/
+
+## Source Facts
+
+- Upstream repository: msitarzewski/agency-agents on GitHub
+- Code license observed: MIT
+- Latest cloned commit: 48502e16e3a358bbf598a35d49b2b46e698a518d
+- GitHub stars observed: 120374
+- Agent markdown files observed: 233
+- Supported tool routes observed: 14
+
+## Planner API
+
+- POST /api/planner returns a sample preview and 402 payment-required state until paid access is verified.
+- GET /api/runtime returns pricing, payment configuration, and one-time payment terms.
+- POST /api/checkout starts configured Polar hosted checkout or returns an explicit not-configured blocker.

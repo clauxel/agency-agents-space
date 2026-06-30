@@ -1,0 +1,133 @@
+{
+  "collectedAt": "2026-06-30T23:39:59.261Z",
+  "keywordRows": [
+    [
+      "ai agents",
+      "primary",
+      "repo category and SERP candidate",
+      "strong",
+      "/",
+      "functionality",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "ai specialist agents",
+      "primary",
+      "repo README positioning",
+      "strong",
+      "/",
+      "functionality",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "multi agent workflow",
+      "primary",
+      "NEXUS strategy and workflow examples",
+      "strong",
+      "/nexus-sprint/",
+      "problem",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "agent roster",
+      "primary",
+      "repo file structure and divisions.json",
+      "strong",
+      "/planner/",
+      "functionality",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "codex agents",
+      "primary",
+      "integrations/codex README",
+      "strong",
+      "/codex-agents/",
+      "integration",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "ai agency workflow",
+      "primary",
+      "README and NEXUS positioning",
+      "strong",
+      "/nexus-sprint/",
+      "tutorial",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "how to choose ai agents",
+      "long-tail",
+      "planner task intent",
+      "strong",
+      "/planner/",
+      "problem",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "multi agent workflow template",
+      "long-tail",
+      "NEXUS handoff templates and examples",
+      "strong",
+      "/templates/",
+      "template",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "codex custom agents toml",
+      "long-tail",
+      "Codex integration docs",
+      "strong",
+      "/codex-agents/",
+      "integration",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "ai agent team for marketing",
+      "long-tail",
+      "marketing division and launch workflow",
+      "strong",
+      "/marketing-team/",
+      "functionality",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "ai agent team for security review",
+      "long-tail",
+      "security and testing divisions",
+      "strong",
+      "/security-qa/",
+      "functionality",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "agency agents alternative",
+      "long-tail",
+      "alternative/comparison intent",
+      "strong",
+      "/agency-agents-alternative/",
+      "alternative",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "agency agents pricing",
+      "long-tail",
+      "commercial package selection",
+      "strong",
+      "/pricing/",
+      "pricing",
+      "- blocked_official_google_trends_not_collected"
+    ],
+    [
+      "ai agent workflow planner",
+      "long-tail",
+      "built product utility",
+      "strong",
+      "/planner/",
+      "tutorial",
+      "- blocked_official_google_trends_not_collected"
+    ]
+  ],
+  "validation": "blocked_official_google_trends_not_collected",
+  "note": "Intent keywords and page matrix were inferred from the repository and product surface. Official Google Trends same-request validation was not collected because no authenticated tool was available in this run."
+}

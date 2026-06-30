@@ -1,0 +1,28 @@
+name = "agency-agents-space"
+main = "worker/index.js"
+compatibility_date = "2026-06-15"
+workers_dev = true
+routes = [
+  { pattern = "agency-agents.space/*", zone_name = "agency-agents.space" },
+  { pattern = "www.agency-agents.space/*", zone_name = "agency-agents.space" }
+]
+
+[vars]
+APP_ORIGIN = "https://agency-agents.space"
+CANONICAL_HOST = "agency-agents.space"
+PAYMENT_PROVIDER = "polar"
+SUPPORT_EMAIL = "support@aigeamy.com"
+
+[assets]
+directory = "./public"
+binding = "SITE_ASSETS"
+not_found_handling = "none"
+run_worker_first = [
+  "/*"
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "agency-agents-space-analytics"
+database_id = "397e3a9d-4e61-4383-9786-c86a811da3a1"
+migrations_dir = "migrations"

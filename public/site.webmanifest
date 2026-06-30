@@ -1,0 +1,15 @@
+{
+  "name": "Agency Agents Space",
+  "short_name": "AA Planner",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8f7",
+  "theme_color": "#087f74",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

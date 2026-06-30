@@ -1,0 +1,35 @@
+{
+  "collectedAt": "2026-06-30T23:39:59.260Z",
+  "env": {
+    "GITHUB_TOKEN": "missing",
+    "GH_TOKEN": "missing",
+    "GIT_API_KEY": "missing",
+    "GIT_ADMINI_API_KEY": "missing",
+    "CLOUDFLARE_API_TOKEN": "missing",
+    "CLOUDFLARE_API_KEY": "missing",
+    "CLOUDFLARE_EMAIL": "missing",
+    "POLAR_ACCESS_TOKEN": "missing",
+    "POLAR_API_KEY": "missing"
+  },
+  "tools": {
+    "gh": "not_found_in_path",
+    "wranglerGlobal": "not_found_in_path",
+    "wranglerNpxWhoami": "not_authenticated_run_wrangler_login_required"
+  },
+  "domain": {
+    "httpApex": {
+      "ok": true,
+      "title": "Parking Page",
+      "headerSample": "HTTP/1.1 200 OK\r\nServer: openresty/1.31.1.1\r\nDate: Tue, 30 Jun 2026 23:39:58 GMT\r\nContent-Type: text/html\r\nContent-Length: 38648\r\nConnection: keep-alive\r\nLast-Modified: Tue, 02 Jun 2026 11:03:34 GMT\r\nx-amz-version-id: lNoGdGvlbSnxXoFN8etLnNNX8zTwiiGt\r\nETag: \"307aae92997eb4bcced2618692247dbd\"\r\nX-Frame-Options: SAMEORIGIN\r\nContent-Security-Policy: frame-ancestors 'self'\r\nX-Content-Type-Options: nosniff\r"
+    },
+    "httpsApex": {
+      "ok": false,
+      "error": "                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to agency-agents.space:443 \n"
+    },
+    "httpsWww": {
+      "ok": false,
+      "error": "                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.agency-agents.space:443 \n"
+    }
+  },
+  "conclusion": "production_pending_domain_parking_page_and_missing_platform_credentials"
+}

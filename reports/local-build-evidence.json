@@ -1,0 +1,36 @@
+{
+  "collectedAt": "2026-06-30T23:39:59.260Z",
+  "status": "local_complete_production_pending",
+  "input": {
+    "openSourceRepo": "https://github.com/msitarzewski/agency-agents",
+    "domain": "agency-agents.space"
+  },
+  "generated": {
+    "htmlPages": 20,
+    "publicFiles": 30,
+    "docsFiles": 12,
+    "sitemapUrls": 19,
+    "heroAssetBytes": 245603
+  },
+  "commands": [
+    {
+      "command": "npm run build",
+      "status": "pass"
+    },
+    {
+      "command": "npm run browser:smoke",
+      "status": "pass"
+    },
+    {
+      "command": "npx wrangler whoami",
+      "status": "blocked_not_authenticated"
+    }
+  ],
+  "gates": {
+    "trust_data_gate": "pass",
+    "trust_content_gate": "pass",
+    "keyword_validation": "blocked_official_google_trends_not_collected",
+    "payment_gate": "polar_checkout_links_pending",
+    "d1_gate": "cloudflare_d1_binding_pending"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "collectedAt": "2026-06-30T23:39:50.244Z",
+  "localBaseUrl": "http://127.0.0.1:8797",
+  "probes": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "ok": true,
+      "payload": {
+        "ok": true,
+        "service": "agency-agents-space"
+      }
+    },
+    {
+      "path": "/api/runtime",
+      "status": 200,
+      "ok": true,
+      "payload": {
+        "ok": true,
+        "brand": "Agency Agents Space",
+        "productName": "AI specialist team planner",
+        "supportEmail": "support@aigeamy.com",
+        "provider": "polar",
+        "paymentConfigured": false,
+        "defaultPlanId": "pro",
+        "defaultBilling": "annual",
+        "pricing": {
+          "starter": {
+            "id": "starter",
+            "name": "Starter",
+            "summary": "One focused specialist-team plan with roster rationale, handoff checklist, and launch risks.",
+            "monthly": {
+              "displayMonthlyUsd": 9,
+              "dueTodayUsd": 9,
+              "coverage": "one month",
+              "renewsAutomatically": false
+            },
+            "annual": {
+              "displayMonthlyUsd": 4.5,
+              "dueTodayUsd": 54,
+              "coverage": "one year",
+              "discount": "50%",
+              "renewsAutomatically": false
+            }
+          },
+          "pro": {
+            "id": "pro",
+            "name": "Pro",
+            "summary": "Full sprint roster, division coverage, NEXUS phase plan, evidence gates, and exportable brief.",
+            "monthly": {
+              "displayMonthlyUsd": 29,
+              "dueTodayUsd": 29,
+              "coverage": "one month",
+              "renewsAutomatically": false
+            },
+            "annual": {
+              "displayMonthlyUsd": 14.5,
+              "dueTodayUsd": 174,
+              "coverage": "one year",
+              "discount": "50%",
+              "renewsAutomatically": false
+            }
+          },
+          "enterprise": {
+            "id": "enterprise",
+            "name": "Enterprise",
+            "summary": "Multi-workstream planning for product, growth, security, QA, and support teams with review loops.",
+            "monthly": {
+              "displayMonthlyUsd": 59,
+              "dueTodayUsd": 59,
+              "coverage": "one month",
+              "renewsAutomatically": false
+            },
+            "annual": {
+              "displayMonthlyUsd": 29.5,
+              "dueTodayUsd": 354,
+              "coverage": "one year",
+              "discount": "50%",
+              "renewsAutomatically": false
+            }
+          }
+        },
+        "checkoutSecrets": {
+          "required": [
+            "AGENCY_AGENTS_SPACE_CHECKOUT_STARTER_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_STARTER_ANNUAL",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_PRO_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_PRO_ANNUAL",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_ENTERPRISE_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_ENTERPRISE_ANNUAL"
+          ],
+          "configuredCount": 0,
+          "missing": [
+            "AGENCY_AGENTS_SPACE_CHECKOUT_STARTER_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_STARTER_ANNUAL",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_PRO_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_PRO_ANNUAL",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_ENTERPRISE_MONTHLY",
+            "AGENCY_AGENTS_SPACE_CHECKOUT_ENTERPRISE_ANNUAL"
+          ]
+        },
+        "terms": "One-time payments for the selected coverage period. Plans do not renew automatically."
+      }
+    },
+    {
+      "path": "/api/planner",
+      "status": 402,
+      "ok": false,
+      "payload": {
+        "ok": false,
+        "paymentRequired": true,
+        "status": 402,
+        "preview": {
+          "product": "AI specialist team planner",
+          "status": "preview_only",
+          "recommendedPlan": "starter",
+          "roster": [
+            "Agents Orchestrator",
+            "Sprint Prioritizer",
+            "UX Architect",
+            "Frontend Developer",
+            "Backend Architect",
+            "Reality Checker",
+            "Security Architect",
+            "Evidence Collector"
+          ],
+          "phases": [
+            "Discovery",
+            "Strategy",
+            "Build loop",
+            "Hardening",
+            "Launch"
+          ],
+          "evidenceGates": [
+            "handoff template",
+            "visual proof",
+            "API or workflow evidence",
+            "Reality Checker approval"
+          ],
+          "risks": [
+            "keep handoffs explicit",
+            "avoid generic prompt-library usage",
+            "keep launch copy tied to one product thesis"
+          ],
+          "gate": "Full roster rationale, export, and implementation checklist require a paid plan."
+        },
+        "pricingUrl": "https://agency-agents.space/pricing/",
+        "checkoutUrl": "https://agency-agents.space/checkout/?plan=starter&billing=annual",
+        "message": "The full AI specialist team plan is gated. Choose a plan before generating the export."
+      }
+    },
+    {
+      "path": "/api/checkout",
+      "status": 503,
+      "ok": false,
+      "payload": {
+        "ok": false,
+        "paymentConfigured": false,
+        "provider": "polar",
+        "error": "Polar checkout is not configured for this plan yet.",
+        "planId": "pro",
+        "billing": "annual",
+        "dueTodayUsd": 174,
+        "contactEmail": "support@aigeamy.com",
+        "requiredSecret": "AGENCY_AGENTS_SPACE_CHECKOUT_PRO_ANNUAL"
+      }
+    },
+    {
+      "path": "/api/analytics",
+      "status": 202,
+      "ok": true,
+      "payload": {
+        "ok": true,
+        "stored": false,
+        "sink": "missing_d1_binding",
+        "blocker": "D1 binding DB is not configured."
+      }
+    }
+  ]
+}
