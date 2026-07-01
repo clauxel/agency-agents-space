@@ -387,7 +387,7 @@
   "gates": {
     "trust_data_gate": "pass",
     "trust_content_gate": "pass",
-    "keyword_validation": "blocked_official_google_trends_not_collected",
+    "keyword_validation": "blocked_with_evidence",
     "payment_gate": "pass",
     "d1_gate": "pass"
   }

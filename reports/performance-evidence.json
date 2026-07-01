@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "generatedAt": "2026-07-01T08:10:00+08:00",
+  "generatedAt": "2026-07-01T08:11:41+08:00",
   "reason": "Production Chrome CDP smoke passed desktop/mobile layout, pricing interaction, checkout ready state, and planner paid gate.",
   "browserSmoke": {
     "collectedAt": "2026-07-01T00:02:07.833Z",

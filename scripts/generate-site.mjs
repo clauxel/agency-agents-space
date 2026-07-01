@@ -598,10 +598,10 @@ function sampleTemplate() {
   return `<section class="section white"><div class="wrap">
     <h2>Sample handoff brief</h2>
     <pre class="preview">Goal: Ship the first paid workflow without bypassing pricing.
-Current evidence: homepage, pricing page, planner preview, checkout blocker.
+Current evidence: homepage, pricing page, planner preview, Polar checkout start, D1 analytics, and production gate.
 Next specialist: Reality Checker.
-Acceptance: mobile screenshot, pricing toggle proof, 402 unpaid gate, source boundary, no external CTA.
-Blockers: missing Polar checkout secret, missing D1 binding, pending production deploy.</pre>
+Acceptance: mobile screenshot, pricing toggle proof, 402 unpaid gate, source boundary, no external CTA, and completion gate pass.
+External exception: official Google Trends keyword validation remains blocked_with_evidence, so candidate terms are not promoted to confirmed traffic terms.</pre>
   </div></section>`
 }
 
@@ -822,7 +822,7 @@ function productData() {
     gates: {
       trust_data_gate: 'pass',
       trust_content_gate: 'pass',
-      keyword_validation: 'blocked_official_google_trends_not_collected',
+      keyword_validation: 'blocked_with_evidence',
       payment_gate: 'pass',
       d1_gate: 'pass',
     },

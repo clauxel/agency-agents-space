@@ -3,7 +3,7 @@
   "sourcePolicy": "Official Google Trends same-request validation is required before candidate terms are counted as effective traffic keywords.",
   "blocker": "blocked_google_trends_timeout_and_429",
   "anchorPolicy": "Each request compares mirofish plus up to four strongly related terms.",
-  "generatedAt": "2026-07-01T08:10:00+08:00",
+  "generatedAt": "2026-07-01T08:11:41+08:00",
   "proofFile": "agency-agents-keyword-proof-2026-07-01.json",
   "confirmedPrimaryKeywords": 0,
   "confirmedLongTailKeywords": 0,
