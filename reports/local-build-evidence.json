@@ -2,7 +2,7 @@
   "site": "agency-agents.space",
   "domain": "agency-agents.space",
   "status": "pass",
-  "generatedAt": "2026-07-01T08:11:41+08:00",
+  "generatedAt": "2026-07-01T08:13:11+08:00",
   "no_early_final_until_all_mandatory_gates_pass": true,
   "allMandatoryOpenSourceBuildStepsComplete": false,
   "completionEnforcementGate": "blocked",
@@ -378,7 +378,7 @@
     "siteRepoOk": true,
     "docsRepo": "https://github.com/clauxel/agency-agents-space-docs",
     "docsRepoOk": true,
-    "siteCommit": "364fd0adb6e2825c68a519b8865945a34c0bdcdd",
+    "siteCommit": "3463650f31ed2949f45c6806586e982625498e82",
     "docsCommit": "d0ec4668d9a7010f3ba4b5439ea3e210f5f0ed7d"
   },
   "searchEvidence": {
