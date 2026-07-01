@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-07-01T08:27:53+08:00",
+  "domain": "agency-agents.space",
+  "campaign": "agency-agents-space-202607",
+  "status": "pass_with_pending_review_and_preflight_notes",
+  "counts": {
+    "confirmed": 2,
+    "submittedPendingReview": 0,
+    "externalExceptions": 0
+  },
+  "rows": [
+    {
+      "platform": "GitHub site repository",
+      "status": "confirmed",
+      "evidenceUrl": "https://github.com/clauxel/agency-agents-space",
+      "targetUrl": "https://agency-agents.space/",
+      "evidence": "README production status committed in 57bf0e8.",
+      "notes": "Controlled public repository; relevant source distribution backlink.",
+      "automationLayersTried": [
+        "git_remote_public_url",
+        "git_push",
+        "public_repository_readme"
+      ],
+      "layerCompletionStatus": "confirmed_public_link",
+      "fallbackReason": "",
+      "ownerHandoffNeeded": false,
+      "ownerHandoffOffered": false,
+      "nextAllowedStep": "monitor_indexing",
+      "urlRetryStrategy": "canonical_url",
+      "campaign": "agency-agents-space-202607"
+    },
+    {
+      "platform": "GitHub docs repository",
+      "status": "confirmed",
+      "evidenceUrl": "https://github.com/clauxel/agency-agents-space-docs",
+      "targetUrl": "https://agency-agents.space/",
+      "evidence": "Independent public docs repository links to the planner from README/docs/llms.txt in d0ec466.",
+      "notes": "Controlled public documentation repository with contextual SaaS links and official source links kept in final source sections.",
+      "automationLayersTried": [
+        "git_remote_public_url",
+        "git_push",
+        "docs_link_scan"
+      ],
+      "layerCompletionStatus": "confirmed_public_link",
+      "fallbackReason": "",
+      "ownerHandoffNeeded": false,
+      "ownerHandoffOffered": false,
+      "nextAllowedStep": "monitor_indexing",
+      "urlRetryStrategy": "canonical_url",
+      "campaign": "agency-agents-space-202607"
+    }
+  ]
+}
