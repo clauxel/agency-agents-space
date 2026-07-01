@@ -1,0 +1,275 @@
+{
+  "status": "pass",
+  "collectedAt": "2026-07-01T00:10:01.370Z",
+  "target": "https://agency-agents.space/",
+  "apexHttps": {
+    "status": "pass",
+    "headerSample": "HTTP/1.1 200 Connection established\r\n\r\nHTTP/2 200 \r\ndate: Wed, 01 Jul 2026 00:10:00 GMT\r\ncontent-type: text/html\r\ncf-cache-status: HIT\r\ncache-control: public, max-age=0, must-revalidate\r\npermissions-policy: camera=(), microphone=(), geolocation=(), payment=()\r\nreferrer-policy: strict-origin-when-cross-origin\r\nx-content-type-options: nosniff\r\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DOs9kLl5ajNnqSGA0sdlsjMFtVXjvGKaEMewY9QWoY%2BYo9c8PeVNDwPUtWvKT9u%2Bnm7C%2BrACM3btb7p2rj0P%2BLOKqtmPglnbvxr5XWV8WuPGHlppD1a95BT4PXdhE5k2jQDH7Zgk\"}]}\r\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\r\nserver: cloudflare\r\ncf-ray: a1412f6a299d211d-HKG\r\nalt-svc: h3=\":443\"; ma=86400\r\n\r",
+    "error": ""
+  },
+  "wwwRedirect": {
+    "status": "pass",
+    "headerSample": "HTTP/1.1 200 Connection established\r\n\r\nHTTP/2 301 \r\ndate: Wed, 01 Jul 2026 00:10:00 GMT\r\nlocation: https://agency-agents.space/\r\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DorD4jnCnGEAp%2Bl3xZ9dkN5YV8m2ks2d9kkMUiGy7xr0pIWKpRSHCRrmzsZoDllL4V3Y6YxEqKoDK26W5Mp3dEDQUP9g7AOsvJWetpdzJuARmBAJToeFFbMPBWWhSsmZ3oocysMum1ZR3g%3D%3D\"}]}\r\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\r\nserver: cloudflare\r\ncf-ray: a1412f6ab93508f1-HKG\r\nalt-svc: h3=\":443\"; ma=86400\r\n\r\nHTTP/1.1 200 Connection established\r\n\r\nHTTP/2 200 \r\ndate: Wed, 01 Jul 2026 00:10:00 GMT\r\ncontent-type: text/html\r\ncf-cache-status: HIT\r\ncache-control: public, max-age=0, must-revalidate\r\npermissions-policy: camera=(), microphone=(), geolocation=(), payment=()\r\nreferrer-policy: strict-origin-when-cross-origin\r\nx-content-type-options: nosniff\r\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2YYNLV1SYZVvIw1KP3WIy1cUBHLl9UJzLpP6tBsqSv0VL4Qy7dLDjfuoqJZAHhSp1Kh9xyz%2BFhcUhMPRnmfrwkC2x7B4jfvC6qNdu8ZFXd65WKY2Lq5SdiuNFN1YdC29yKWFAcmJ\"}]}\r",
+    "error": ""
+  },
+  "homepage": {
+    "status": "pass",
+    "title": "Agency Agents Space | AI specialist team planner",
+    "hasParkingPage": false
+  },
+  "runtime": {
+    "status": "pass",
+    "paymentConfigured": true,
+    "configuredCount": 6,
+    "missing": []
+  },
+  "checkout": {
+    "status": "pass",
+    "provider": "polar",
+    "planId": "pro",
+    "billing": "annual",
+    "dueTodayUsd": 174,
+    "checkoutHost": "buy.polar.sh"
+  },
+  "analyticsD1": {
+    "status": "pass",
+    "response": {
+      "ok": true,
+      "stored": true,
+      "sink": "cloudflare_d1"
+    }
+  },
+  "dns": {
+    "status": "pass",
+    "dsStatus": 0,
+    "dsAnswerCount": 0,
+    "nsAnswers": [
+      "archer.ns.cloudflare.com.",
+      "sydney.ns.cloudflare.com."
+    ]
+  },
+  "probes": [
+    {
+      "name": "apex_https",
+      "status": "pass",
+      "evidence": "https://agency-agents.space/ returns HTTP/2 200."
+    },
+    {
+      "name": "www_redirect",
+      "status": "pass",
+      "evidence": "https://www.agency-agents.space/ redirects to apex."
+    },
+    {
+      "name": "polar_checkout",
+      "status": "pass",
+      "evidence": "Pro annual checkout returns buy.polar.sh URL."
+    },
+    {
+      "name": "analytics_d1",
+      "status": "pass",
+      "evidence": "Live analytics write returns cloudflare_d1."
+    },
+    {
+      "name": "gsc_bing_indexnow",
+      "status": "pass",
+      "evidence": "GSC=submitted, Bing=submitted, IndexNow=submitted"
+    }
+  ],
+  "no_early_final_until_all_mandatory_gates_pass": true,
+  "allMandatoryOpenSourceBuildStepsComplete": false,
+  "completionEnforcementGate": "blocked",
+  "mandatoryCompletionGate": {
+    "source_repo": {
+      "status": "pass",
+      "evidence": "https://github.com/msitarzewski/agency-agents scanned with source-window facts."
+    },
+    "code_build": {
+      "status": "pass",
+      "evidence": "npm run build passed locally after production gate updates."
+    },
+    "report_center": {
+      "status": "pass",
+      "evidence": "tools/report-manager/generated/build-guides/2026-07-01/open-source-code-website-build-agency-agents-space-production-2026-07-01.html"
+    },
+    "site_registry": {
+      "status": "pass",
+      "evidence": "site-registry updated to active_cloudflare and includeInPatrol:true."
+    },
+    "pricing_page": {
+      "status": "pass",
+      "evidence": "/pricing/ generated and live."
+    },
+    "paid_gate": {
+      "status": "pass",
+      "evidence": "/api/planner remains 402 for unpaid full export."
+    },
+    "polar_checkout": {
+      "status": "pass",
+      "evidence": "Six Polar checkout secrets configured; live /api/checkout returned buy.polar.sh URL."
+    },
+    "d1_analytics": {
+      "status": "pass",
+      "evidence": "Live /api/analytics returned stored:true sink:cloudflare_d1."
+    },
+    "cloudflare_deploy": {
+      "status": "pass",
+      "evidence": "Cloudflare Worker deployed with D1 and Assets bindings."
+    },
+    "dns_https_apex_www": {
+      "status": "pass",
+      "evidence": "Apex HTTPS 200; www 301 to apex; parent DS empty and Cloudflare NS visible."
+    },
+    "github_site_repo": {
+      "status": "pass",
+      "evidence": "https://github.com/clauxel/agency-agents-space"
+    },
+    "public_github_docs_repo": {
+      "status": "pass",
+      "evidence": "https://github.com/clauxel/agency-agents-space-docs"
+    },
+    "gsc_bing_indexnow": {
+      "status": "pass",
+      "evidence": "GSC=submitted, Bing=submitted, IndexNow=submitted"
+    },
+    "browser_main_flow": {
+      "status": "blocked_with_evidence",
+      "evidence": "Codex in-app browser timed out repeatedly; production Chrome CDP fallback passed homepage, mobile, pricing, Polar checkout ready, and planner paid gate."
+    },
+    "performance_gate": {
+      "status": "pass",
+      "evidence": "Chrome CDP production smoke passed desktop/mobile layout with no horizontal overflow."
+    },
+    "trust_data_gate": {
+      "status": "pass",
+      "evidence": "trustDataLedger/source facts present."
+    },
+    "trust_content_gate": {
+      "status": "pass",
+      "evidence": "source boundaries, terms, privacy, support, and non-affiliation copy present."
+    },
+    "keyword_validation": {
+      "status": "blocked_with_evidence",
+      "evidence": "Google Trends same-request MiroFish validation attempted; direct fetch timed out and curl fallback returned HTTP 429, so no traffic keywords were counted."
+    },
+    "backlink_distribution": {
+      "status": "blocked_with_evidence",
+      "evidence": "Backlink ledger records confirmed GitHub/docs links and backlink-only external exceptions; no paid, reciprocal, security-bypass, or direct-email action was taken."
+    },
+    "changelog": {
+      "status": "pass",
+      "evidence": "WEBSITE_CHANGELOG.md updated with production continuation."
+    },
+    "final_response_consistency": {
+      "status": "blocked_with_evidence",
+      "evidence": "Final response must not call all Skill steps fully complete while keyword validation or in-app browser flow remains blocked."
+    }
+  },
+  "completionLedger": [
+    {
+      "id": "source_repo",
+      "status": "pass",
+      "evidence": "https://github.com/msitarzewski/agency-agents scanned with source-window facts."
+    },
+    {
+      "id": "code_build",
+      "status": "pass",
+      "evidence": "npm run build passed locally after production gate updates."
+    },
+    {
+      "id": "report_center",
+      "status": "pass",
+      "evidence": "tools/report-manager/generated/build-guides/2026-07-01/open-source-code-website-build-agency-agents-space-production-2026-07-01.html"
+    },
+    {
+      "id": "site_registry",
+      "status": "pass",
+      "evidence": "site-registry updated to active_cloudflare and includeInPatrol:true."
+    },
+    {
+      "id": "pricing_page",
+      "status": "pass",
+      "evidence": "/pricing/ generated and live."
+    },
+    {
+      "id": "paid_gate",
+      "status": "pass",
+      "evidence": "/api/planner remains 402 for unpaid full export."
+    },
+    {
+      "id": "polar_checkout",
+      "status": "pass",
+      "evidence": "Six Polar checkout secrets configured; live /api/checkout returned buy.polar.sh URL."
+    },
+    {
+      "id": "d1_analytics",
+      "status": "pass",
+      "evidence": "Live /api/analytics returned stored:true sink:cloudflare_d1."
+    },
+    {
+      "id": "cloudflare_deploy",
+      "status": "pass",
+      "evidence": "Cloudflare Worker deployed with D1 and Assets bindings."
+    },
+    {
+      "id": "dns_https_apex_www",
+      "status": "pass",
+      "evidence": "Apex HTTPS 200; www 301 to apex; parent DS empty and Cloudflare NS visible."
+    },
+    {
+      "id": "github_site_repo",
+      "status": "pass",
+      "evidence": "https://github.com/clauxel/agency-agents-space"
+    },
+    {
+      "id": "public_github_docs_repo",
+      "status": "pass",
+      "evidence": "https://github.com/clauxel/agency-agents-space-docs"
+    },
+    {
+      "id": "gsc_bing_indexnow",
+      "status": "pass",
+      "evidence": "GSC=submitted, Bing=submitted, IndexNow=submitted"
+    },
+    {
+      "id": "browser_main_flow",
+      "status": "blocked_with_evidence",
+      "evidence": "Codex in-app browser timed out repeatedly; production Chrome CDP fallback passed homepage, mobile, pricing, Polar checkout ready, and planner paid gate."
+    },
+    {
+      "id": "performance_gate",
+      "status": "pass",
+      "evidence": "Chrome CDP production smoke passed desktop/mobile layout with no horizontal overflow."
+    },
+    {
+      "id": "trust_data_gate",
+      "status": "pass",
+      "evidence": "trustDataLedger/source facts present."
+    },
+    {
+      "id": "trust_content_gate",
+      "status": "pass",
+      "evidence": "source boundaries, terms, privacy, support, and non-affiliation copy present."
+    },
+    {
+      "id": "keyword_validation",
+      "status": "blocked_with_evidence",
+      "evidence": "Google Trends same-request MiroFish validation attempted; direct fetch timed out and curl fallback returned HTTP 429, so no traffic keywords were counted."
+    },
+    {
+      "id": "backlink_distribution",
+      "status": "blocked_with_evidence",
+      "evidence": "Backlink ledger records confirmed GitHub/docs links and backlink-only external exceptions; no paid, reciprocal, security-bypass, or direct-email action was taken."
+    },
+    {
+      "id": "changelog",
+      "status": "pass",
+      "evidence": "WEBSITE_CHANGELOG.md updated with production continuation."
+    },
+    {
+      "id": "final_response_consistency",
+      "status": "blocked_with_evidence",
+      "evidence": "Final response must not call all Skill steps fully complete while keyword validation or in-app browser flow remains blocked."
+    }
+  ],
+  "finalState": "production_live_completion_blocked_by_keyword_and_in_app_browser"
+}

@@ -1,0 +1,69 @@
+{
+  "provider": "polar",
+  "site": "agency-agents-space",
+  "domain": "agency-agents.space",
+  "origin": "https://agency-agents.space",
+  "createdAt": "2026-06-30",
+  "products": [
+    {
+      "plan": "starter",
+      "billing": "monthly",
+      "productName": "Agency Agents Space Starter Monthly",
+      "productId": "f295b4d7-b477-43a7-af46-01ea52567486",
+      "priceId": "40ef5498-5961-495a-9e37-61cb5f97626c",
+      "amountUsd": "9.00",
+      "checkoutLinkId": "0ed56bae-8718-4502-8dbf-66bcbc045c2e",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_zCeCfqVBTLE8i0N870R8EhudewniDQL6vlHBZ2AgI7u"
+    },
+    {
+      "plan": "starter",
+      "billing": "annual",
+      "productName": "Agency Agents Space Starter Annual",
+      "productId": "8a7e7b74-8bb3-4eae-9d40-605e413d33ff",
+      "priceId": "61883df6-0f8d-47fd-811f-87e92b3188b5",
+      "amountUsd": "54.00",
+      "checkoutLinkId": "608008d8-7852-420c-b51d-3ae0877b1c72",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_QsKbxTojS7QCwVDuUzgxpG0MURFwwdyVWkLri2pgRWi"
+    },
+    {
+      "plan": "pro",
+      "billing": "monthly",
+      "productName": "Agency Agents Space Pro Monthly",
+      "productId": "757a39c2-1d06-40d7-95aa-bcb7383e2bab",
+      "priceId": "aacc978c-7e6a-4ae1-a7e2-1dc06cc4bc75",
+      "amountUsd": "29.00",
+      "checkoutLinkId": "6579c539-7781-4b7e-9a4b-422334695fa2",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_LnkiLvC8ivPkMx0YE2zlmi4XYkL1R0COrdU2q3XS1jR"
+    },
+    {
+      "plan": "pro",
+      "billing": "annual",
+      "productName": "Agency Agents Space Pro Annual",
+      "productId": "68222441-d5a7-4d76-8ee1-a04d31247bb7",
+      "priceId": "5908ac78-48b9-41af-a953-2c5d538cafd6",
+      "amountUsd": "174.00",
+      "checkoutLinkId": "86c90d4e-7763-469d-a548-d6a718ca4f17",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_9MlBXwy6UkxDklkMXWn2j2pQxamruHzjAkIFC2hbf5l"
+    },
+    {
+      "plan": "enterprise",
+      "billing": "monthly",
+      "productName": "Agency Agents Space Enterprise Monthly",
+      "productId": "77c45013-2ba3-4cd5-8fe4-67c19d9282e9",
+      "priceId": "e5741023-6e19-496e-a9ee-3c593e68ae48",
+      "amountUsd": "59.00",
+      "checkoutLinkId": "2bb302dd-e1ff-4789-8e06-f759eca58920",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_k6pwfTOFlvrO2fGSN69u7FehDUZj0yQM6mB2I2HPUKX"
+    },
+    {
+      "plan": "enterprise",
+      "billing": "annual",
+      "productName": "Agency Agents Space Enterprise Annual",
+      "productId": "5de592ec-0fd1-4d2f-9f65-327f64197424",
+      "priceId": "7e1a7a65-4257-49e1-9e66-e63f65078da9",
+      "amountUsd": "354.00",
+      "checkoutLinkId": "149a54d6-a225-4403-8eb9-0969798d460e",
+      "checkoutUrl": "https://buy.polar.sh/polar_cl_pVgtk9YX4jurQIxBH0QYDqPYSLJ1Ks1Kd4HbS4IXTJl"
+    }
+  ]
+}

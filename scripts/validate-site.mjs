@@ -32,6 +32,7 @@ const required = [
   'robots.txt',
   'llms.txt',
   '590a3ab02487cffe4cfd55b0df769f65.txt',
+  'BingSiteAuth.xml',
   'favicon.svg',
   'site.webmanifest',
   'assets/agent-roster-planner-hero.jpg',

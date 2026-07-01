@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os'
 
 const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const baseUrl = process.env.BASE_URL || 'http://127.0.0.1:8797'
+const liveCheckoutMode = /^https:\/\/(www\.)?agency-agents\.space/i.test(baseUrl)
 const outDir = new URL('../reports/browser-smoke/', import.meta.url)
 await mkdir(outDir, { recursive: true })
 
@@ -117,6 +118,16 @@ async function screenshot(cdp, sessionId, file) {
   await writeFile(new URL(file, outDir), Buffer.from(shot.data, 'base64'))
 }
 
+async function pollEvaluate(cdp, sessionId, expression, predicate, attempts = 18, intervalMs = 500) {
+  let value
+  for (let i = 0; i < attempts; i += 1) {
+    value = await evaluate(cdp, sessionId, expression)
+    if (predicate(value)) return value
+    await delay(intervalMs)
+  }
+  return value
+}
+
 const { proc, cdp, userDataDir } = await launchChrome()
 const report = {
   collectedAt: new Date().toISOString(),
@@ -171,13 +182,21 @@ try {
   await evaluate(cdp, pricing.sessionId, `document.querySelector('[data-billing="annual"]').click(); true`)
   await delay(300)
   await evaluate(cdp, pricing.sessionId, `document.querySelector('[data-plan-card="pro"] [data-plan-action]').click(); true`)
-  await delay(700)
-  const checkoutState = await evaluate(cdp, pricing.sessionId, `(() => ({
+  await delay(liveCheckoutMode ? 900 : 700)
+  const checkoutExpression = `(() => ({
+    currentUrl: location.href,
+    hostname: location.hostname,
+    checkoutStarted: location.hostname === 'polar.sh' || location.hostname === 'buy.polar.sh' || location.hostname.endsWith('.polar.sh') || location.hostname.endsWith('.polar.io'),
     annualActive: document.querySelector('[data-billing="annual"]')?.getAttribute('aria-pressed'),
     proPrice: document.querySelector('[data-plan-card="pro"] [data-price]')?.textContent,
     modalVisible: !document.getElementById('checkout-modal')?.hidden,
     modalText: document.querySelector('[data-modal-status]')?.textContent,
-  }))()`)
+    modalCheckoutUrl: document.querySelector('[data-modal-link]')?.href || '',
+    modalCheckoutReady: /^https:\\/\\/([^/]+\\.)?polar\\.(sh|io)\\//i.test(document.querySelector('[data-modal-link]')?.href || ''),
+  }))()`
+  const checkoutState = liveCheckoutMode
+    ? await pollEvaluate(cdp, pricing.sessionId, checkoutExpression, (state) => Boolean(state?.checkoutStarted || state?.modalCheckoutReady), 20, 500)
+    : await evaluate(cdp, pricing.sessionId, checkoutExpression)
   report.checks.push({ name: 'pricing_interaction', monthlyState, checkoutState })
 
   const planner = await withPage(cdp, { width: 1280, height: 1000, mobile: false }, '/planner/')
@@ -214,7 +233,11 @@ const pricingCheck = report.checks.find((check) => check.name === 'pricing_inter
 if (pricingCheck?.monthlyState?.proPrice !== '$29' || !pricingCheck?.monthlyState?.proDue?.includes('does not renew automatically')) {
   throw new Error('Monthly pricing interaction failed')
 }
-if (!pricingCheck?.checkoutState?.modalVisible || !/not configured/i.test(pricingCheck.checkoutState.modalText || '')) {
+if (liveCheckoutMode) {
+  if (!pricingCheck?.checkoutState?.checkoutStarted && !pricingCheck?.checkoutState?.modalCheckoutReady) {
+    throw new Error('Live Polar checkout start was not verified')
+  }
+} else if (!pricingCheck?.checkoutState?.modalVisible || !/not configured/i.test(pricingCheck.checkoutState.modalText || '')) {
   throw new Error('Checkout blocker modal was not verified')
 }
 const plannerCheck = report.checks.find((check) => check.name === 'planner_gate')
@@ -226,4 +249,4 @@ if (!/Security Architect/.test(plannerCheck.output || '')) {
 }
 
 await writeFile(new URL('browser-smoke-report.json', outDir), JSON.stringify(report, null, 2) + '\n')
-console.log('Browser smoke verified desktop/mobile layout, pricing toggle, checkout blocker modal, planner paid gate, and wrote reports/browser-smoke/browser-smoke-report.json')
+console.log('Browser smoke verified desktop/mobile layout, pricing toggle, checkout start/blocker state, planner paid gate, and wrote reports/browser-smoke/browser-smoke-report.json')

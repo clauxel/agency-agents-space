@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-07-01T00:04:16.540Z",
+  "domain": "agency-agents.space",
+  "siteUrl": "https://agency-agents.space/",
+  "sitemapUrl": "https://agency-agents.space/sitemap.xml",
+  "sitemap": {
+    "status": "live",
+    "urlCount": 19,
+    "submittedUrls": [
+      "https://agency-agents.space/",
+      "https://agency-agents.space/planner/",
+      "https://agency-agents.space/nexus-sprint/",
+      "https://agency-agents.space/codex-agents/",
+      "https://agency-agents.space/marketing-team/",
+      "https://agency-agents.space/security-qa/",
+      "https://agency-agents.space/templates/",
+      "https://agency-agents.space/integrations/",
+      "https://agency-agents.space/agency-agents-alternative/",
+      "https://agency-agents.space/docs/",
+      "https://agency-agents.space/pricing/",
+      "https://agency-agents.space/checkout/",
+      "https://agency-agents.space/success/",
+      "https://agency-agents.space/cancel/",
+      "https://agency-agents.space/source-notes/",
+      "https://agency-agents.space/faq/",
+      "https://agency-agents.space/privacy/",
+      "https://agency-agents.space/terms/",
+      "https://agency-agents.space/changelog/"
+    ]
+  },
+  "gsc": {
+    "property": "sc-domain:agency-agents.space",
+    "urlPrefixProperty": "https://agency-agents.space/",
+    "sitemapUrl": "https://agency-agents.space/sitemap.xml",
+    "verification": null,
+    "domainSitemapStatus": "ok:204",
+    "urlPrefixSitemapStatus": "ok:204",
+    "matchingPropertiesAfter": [
+      {
+        "siteUrl": "sc-domain:agency-agents.space",
+        "permissionLevel": "siteOwner"
+      },
+      {
+        "siteUrl": "https://agency-agents.space/",
+        "permissionLevel": "siteOwner"
+      }
+    ],
+    "status": "submitted"
+  },
+  "bing": {
+    "status": "submitted",
+    "siteUrl": "https://agency-agents.space/",
+    "sitemapUrl": "https://agency-agents.space/sitemap.xml",
+    "matchingSiteBefore": {
+      "url": "https://agency-agents.space/",
+      "isVerified": true
+    },
+    "addSite": {
+      "status": "submitted",
+      "httpStatus": 200,
+      "error": ""
+    },
+    "verifySite": {
+      "status": "submitted",
+      "httpStatus": 200,
+      "error": ""
+    },
+    "submitFeed": {
+      "status": "submitted",
+      "httpStatus": 200,
+      "error": ""
+    },
+    "submitUrlBatch": {
+      "status": "submitted",
+      "httpStatus": 200,
+      "error": ""
+    },
+    "matchingSiteAfter": {
+      "url": "https://agency-agents.space/",
+      "isVerified": true
+    }
+  },
+  "indexNow": {
+    "status": "submitted",
+    "httpStatus": 200,
+    "keyLocation": "https://agency-agents.space/590a3ab02487cffe4cfd55b0df769f65.txt",
+    "urlCount": 19,
+    "error": ""
+  }
+}

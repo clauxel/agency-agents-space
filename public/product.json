@@ -388,7 +388,7 @@
     "trust_data_gate": "pass",
     "trust_content_gate": "pass",
     "keyword_validation": "blocked_official_google_trends_not_collected",
-    "payment_gate": "polar_checkout_links_pending",
-    "d1_gate": "cloudflare_d1_binding_pending"
+    "payment_gate": "pass",
+    "d1_gate": "pass"
   }
 }

@@ -6,6 +6,7 @@ const origin = 'https://agency-agents.space'
 const supportEmail = 'support@aigeamy.com'
 const generatedAt = '2026-06-30T23:59:00+08:00'
 const indexNowKey = '590a3ab02487cffe4cfd55b0df769f65'
+const bingSiteAuthXml = '<?xml version="1.0"?><users><user>94D388E2CA0B71EC5A04D17A6A46E444</user></users>\n'
 
 const repoFacts = {
   upstreamRepo: 'https://github.com/msitarzewski/agency-agents',
@@ -822,8 +823,8 @@ function productData() {
       trust_data_gate: 'pass',
       trust_content_gate: 'pass',
       keyword_validation: 'blocked_official_google_trends_not_collected',
-      payment_gate: 'polar_checkout_links_pending',
-      d1_gate: 'cloudflare_d1_binding_pending',
+      payment_gate: 'pass',
+      d1_gate: 'pass',
     },
   }
 }
@@ -1049,6 +1050,7 @@ await writePublic('sitemap.xml', sitemapXml())
 await writePublic('robots.txt', robotsTxt())
 await writePublic('llms.txt', llmsTxt())
 await writePublic(`${indexNowKey}.txt`, `${indexNowKey}\n`)
+await writePublic('BingSiteAuth.xml', bingSiteAuthXml)
 await writePublic('favicon.svg', faviconSvg())
 await writePublic('site.webmanifest', manifestJson() + '\n')
 

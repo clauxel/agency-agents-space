@@ -1,71 +1,75 @@
-[
-  {
-    "id": "github_activity",
-    "label": "GitHub activity",
-    "source": "https://github.com/msitarzewski/agency-agents",
-    "collectedAt": "2026-06-30T23:59:00+08:00",
-    "values": {
-      "stars": 120374,
-      "forks": 19672,
-      "watchers": 120374,
-      "openIssues": 85,
-      "pushedAt": "2026-06-30T15:27:17Z"
+{
+  "generatedAt": "2026-07-01T08:10:00+08:00",
+  "status": "pass",
+  "ledger": [
+    {
+      "id": "github_activity",
+      "label": "GitHub activity",
+      "source": "https://github.com/msitarzewski/agency-agents",
+      "collectedAt": "2026-06-30T23:59:00+08:00",
+      "values": {
+        "stars": 120374,
+        "forks": 19672,
+        "watchers": 120374,
+        "openIssues": 85,
+        "pushedAt": "2026-06-30T15:27:17Z"
+      },
+      "displayDecision": "shown as source-window trust signal, not as this site traction",
+      "confidence": "high"
     },
-    "displayDecision": "shown as source-window trust signal, not as this site traction",
-    "confidence": "high"
-  },
-  {
-    "id": "source_scan",
-    "label": "Roster scan",
-    "source": "Local cloned repository plus divisions.json/tools.json",
-    "collectedAt": "2026-06-30T23:59:00+08:00",
-    "values": {
-      "divisions": 16,
-      "agentMarkdownCount": 233,
-      "supportedToolCount": 14,
-      "markdownLines": 73007
+    {
+      "id": "source_scan",
+      "label": "Roster scan",
+      "source": "Local cloned repository plus divisions.json/tools.json",
+      "collectedAt": "2026-06-30T23:59:00+08:00",
+      "values": {
+        "divisions": 16,
+        "agentMarkdownCount": 233,
+        "supportedToolCount": 14,
+        "markdownLines": 73007
+      },
+      "displayDecision": "shown on homepage and source notes with date window",
+      "confidence": "high"
     },
-    "displayDecision": "shown on homepage and source notes with date window",
-    "confidence": "high"
-  },
-  {
-    "id": "license_boundary",
-    "label": "License boundary",
-    "source": "Upstream LICENSE",
-    "collectedAt": "2026-06-30T23:59:00+08:00",
-    "values": {
-      "codeLicense": "MIT"
+    {
+      "id": "license_boundary",
+      "label": "License boundary",
+      "source": "Upstream LICENSE",
+      "collectedAt": "2026-06-30T23:59:00+08:00",
+      "values": {
+        "codeLicense": "MIT"
+      },
+      "displayDecision": "shown in source notes and FAQ",
+      "confidence": "high"
     },
-    "displayDecision": "shown in source notes and FAQ",
-    "confidence": "high"
-  },
-  {
-    "id": "strategy_assets",
-    "label": "NEXUS strategy assets",
-    "source": "strategy/QUICKSTART.md and strategy/EXECUTIVE-BRIEF.md",
-    "collectedAt": "2026-06-30T23:59:00+08:00",
-    "values": {
-      "modes": [
-        "NEXUS-Full",
-        "NEXUS-Sprint",
-        "NEXUS-Micro"
-      ],
-      "phaseCount": 7,
-      "qualityGate": "evidence-based phase gates"
+    {
+      "id": "strategy_assets",
+      "label": "NEXUS strategy assets",
+      "source": "strategy/QUICKSTART.md and strategy/EXECUTIVE-BRIEF.md",
+      "collectedAt": "2026-06-30T23:59:00+08:00",
+      "values": {
+        "modes": [
+          "NEXUS-Full",
+          "NEXUS-Sprint",
+          "NEXUS-Micro"
+        ],
+        "phaseCount": 7,
+        "qualityGate": "evidence-based phase gates"
+      },
+      "displayDecision": "shown as planning-method evidence",
+      "confidence": "high"
     },
-    "displayDecision": "shown as planning-method evidence",
-    "confidence": "high"
-  },
-  {
-    "id": "planner_output_sample",
-    "label": "Planner preview sample",
-    "generationMethod": "deterministic local preview algorithm using form inputs and source-derived roster categories",
-    "collectedAt": "2026-06-30T23:59:00+08:00",
-    "values": {
-      "label": "Sample",
-      "userTraction": "not claimed"
-    },
-    "displayDecision": "shown as sample output only",
-    "confidence": "medium"
-  }
-]
+    {
+      "id": "planner_output_sample",
+      "label": "Planner preview sample",
+      "generationMethod": "deterministic local preview algorithm using form inputs and source-derived roster categories",
+      "collectedAt": "2026-06-30T23:59:00+08:00",
+      "values": {
+        "label": "Sample",
+        "userTraction": "not claimed"
+      },
+      "displayDecision": "shown as sample output only",
+      "confidence": "medium"
+    }
+  ]
+}

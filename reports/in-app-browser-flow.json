@@ -1,0 +1,35 @@
+{
+  "collectedAt": "2026-07-01T00:02:00+08:00",
+  "baseUrl": "https://agency-agents.space",
+  "tool": "codex_in_app_browser_playwright",
+  "status": "blocked_with_evidence",
+  "attempts": [
+    {
+      "name": "full_live_flow",
+      "status": "blocked_with_evidence",
+      "evidence": "The in-app browser session timed out while navigating the production site; the runtime reset before a sidecar could be written."
+    },
+    {
+      "name": "home_and_www_segment",
+      "status": "blocked_with_evidence",
+      "evidence": "A fresh in-app browser tab also timed out during the first production navigation segment."
+    },
+    {
+      "name": "hard_timeout_retry",
+      "status": "blocked_with_evidence",
+      "evidence": "A retry with per-navigation hard timeouts still timed out at the browser-control layer."
+    }
+  ],
+  "fallbackEvidence": {
+    "tool": "chrome_headless_cdp_device_metrics",
+    "status": "pass",
+    "file": "reports/browser-smoke/browser-smoke-report.json",
+    "coverage": [
+      "production homepage desktop layout",
+      "production homepage mobile layout",
+      "pricing billing toggle",
+      "Polar checkout ready state",
+      "planner paid gate"
+    ]
+  }
+}

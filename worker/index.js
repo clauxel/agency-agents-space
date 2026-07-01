@@ -295,11 +295,11 @@ async function handleAnalytics(request, env, url) {
 }
 
 async function serveAsset(request, env, url) {
-  const path = url.pathname === '/' ? '/index.html' : url.pathname
+  const path = url.pathname
   const assetRequest = new Request(new URL(path, url.origin).toString(), request)
   let response = await env.SITE_ASSETS.fetch(assetRequest)
   if (response.status === 404 && !path.includes('.') && !path.endsWith('/')) {
-    response = await env.SITE_ASSETS.fetch(new Request(new URL(path + '/index.html', url.origin).toString(), request))
+    response = await env.SITE_ASSETS.fetch(new Request(new URL(path + '/', url.origin).toString(), request))
   }
   if (response.status === 404) {
     const notFound = await env.SITE_ASSETS.fetch(new Request(new URL('/404.html', url.origin).toString(), request))

@@ -1,6 +1,6 @@
 {
-  "collectedAt": "2026-06-30T23:39:51.893Z",
-  "baseUrl": "http://127.0.0.1:8797",
+  "collectedAt": "2026-07-01T00:02:07.833Z",
+  "baseUrl": "https://agency-agents.space",
   "tool": "chrome_headless_cdp_device_metrics",
   "checks": [
     {
@@ -11,10 +11,10 @@
       "h1": "Assemble the right AI specialist team before the project starts drifting.",
       "cta": "View pricing plans",
       "heroImageComplete": true,
-      "requestCount": 5,
-      "transferSize": 263453,
-      "navTransfer": 18847,
-      "domContentLoadedMs": 84
+      "requestCount": 7,
+      "transferSize": 253150,
+      "navTransfer": 6510,
+      "domContentLoadedMs": 461
     },
     {
       "name": "home_mobile_layout",
@@ -38,10 +38,15 @@
         "proButton": "Checkout Pro monthly"
       },
       "checkoutState": {
+        "currentUrl": "https://agency-agents.space/pricing/",
+        "hostname": "agency-agents.space",
+        "checkoutStarted": false,
         "annualActive": "true",
         "proPrice": "$14.50",
         "modalVisible": true,
-        "modalText": "Polar checkout is not configured for this plan yet. Contact support or retry after deployment secrets are configured."
+        "modalText": "Polar hosted checkout is ready. Use the button below if the popup did not open.",
+        "modalCheckoutUrl": "https://buy.polar.sh/polar_cl_9MlBXwy6UkxDklkMXWn2j2pQxamruHzjAkIFC2hbf5l",
+        "modalCheckoutReady": true
       }
     },
     {

@@ -9,6 +9,9 @@
     "test": "npm run build",
     "serve": "node scripts/local-server.mjs",
     "browser:smoke": "node scripts/browser-smoke.mjs",
+    "keywords:trends": "node scripts/verify-keywords-trends.mjs",
+    "production:verify": "node scripts/production-verify.mjs",
+    "search:submit": "node scripts/search-submit.mjs",
     "report": "node scripts/generate-build-report.mjs",
     "dev": "npx wrangler dev --local --port 8797",
     "cloudflare:deploy": "npm run build && npx wrangler deploy --keep-vars"

@@ -1,0 +1,36 @@
+{
+  "status": "external_backlink_exception",
+  "generatedAt": "2026-07-01T08:10:00+08:00",
+  "domain": "agency-agents.space",
+  "counts": {
+    "confirmed": 2,
+    "externalBacklinkExceptions": 8,
+    "productionBlocking": 0
+  },
+  "confirmed": [
+    {
+      "platform": "GitHub site repository",
+      "status": "confirmed",
+      "url": "https://github.com/clauxel/agency-agents-space",
+      "backlinkUrl": "https://github.com/clauxel/agency-agents-space#readme",
+      "evidence": "README added with live site, planner, pricing, source notes, and docs links."
+    },
+    {
+      "platform": "GitHub docs repository",
+      "status": "confirmed",
+      "url": "https://github.com/clauxel/agency-agents-space-docs",
+      "backlinkUrl": "https://github.com/clauxel/agency-agents-space-docs#readme",
+      "evidence": "Public docs README links to the live site, planner, pricing, and source notes."
+    }
+  ],
+  "externalBacklinkExceptions": [
+    "Directory submissions are backlink-only and remain gated by official keyword validation.",
+    "No paid placement was purchased or accepted.",
+    "No reciprocal badge was added without Owner authorization.",
+    "No CAPTCHA/security-bypass action was attempted.",
+    "No email was sent to specific people.",
+    "No third-party account-sensitive setting was changed.",
+    "No unverified directory listing is marked submitted.",
+    "Retry allowed after keyword gate passes and free public submission surfaces are stable."
+  ]
+}
